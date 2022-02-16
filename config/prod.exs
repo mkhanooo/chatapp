@@ -21,7 +21,8 @@ config :logger, level: :info
 #
 #     config :chatapp, ChatappWeb.Endpoint,
 #       ...,
-#       url: [host: "example.com", port: 443],
+     url: [scheme: "https", host: "tranquil-meadow-37222.herokuapp.com", port: 443],
+     force_ssl: [rewrite_on: [:x_forwarded_proto]],
 #       https: [
 #         ...,
 #         port: 443,
